@@ -1481,6 +1481,16 @@ function init(){
 	const image17 = textureLoader.load('./src/img/poems/p17.png');
 	const image18 = textureLoader.load('./src/img/poems/p18.png');
 
+	const image19 = textureLoader.load('./src/img/poems/p19.png');
+	const image20 = textureLoader.load('./src/img/poems/p20.png');
+	const image21 = textureLoader.load('./src/img/poems/p21.png');
+	const image22 = textureLoader.load('./src/img/poems/p22.png');
+	const image23 = textureLoader.load('./src/img/poems/p23.png');
+	const image24 = textureLoader.load('./src/img/poems/p24.png');
+	const image25 = textureLoader.load('./src/img/poems/p25.png');
+	const image26 = textureLoader.load('./src/img/poems/p26.png');
+	const image27 = textureLoader.load('./src/img/poems/p27.png');
+
 	// poème 1
 	const planeGeometry = new THREE.PlaneGeometry(40, 40); // Remplacez la taille du plan par celle de votre choix
 	const p1Mat = new THREE.MeshBasicMaterial({ map: image1,transparent: true,alphaTest: -200, });
@@ -1590,7 +1600,61 @@ function init(){
 	p18.position.set(-173, -7, -132);
 	p18.rotation.set(0,THREE.MathUtils.degToRad(63.5),0)
 
-	scene.add(p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16, p17, p18);
+	//poème 19
+	const p19Mat = new THREE.MeshBasicMaterial({ map: image19,transparent: true,alphaTest: -200, });
+	const p19 = new THREE.Mesh(planeGeometry, p19Mat);
+	p19.position.set(-83, -43, 199.9);
+	p19.rotation.set(0,Math.PI,0)
+
+	//poème 20
+	const p20Mat = new THREE.MeshBasicMaterial({ map: image20,transparent: true,alphaTest: -200, });
+	const p20 = new THREE.Mesh(planeGeometry, p20Mat);
+	p20.position.set(-120, -8, 80);
+	p20.rotation.set(0,THREE.MathUtils.degToRad(-63.5),0)
+
+	//poème 21
+	const p21Mat = new THREE.MeshBasicMaterial({ map: image21,transparent: true,alphaTest: -200, });
+	const p21 = new THREE.Mesh(planeGeometry, p21Mat);
+	p21.position.set(-175, -9, 50);
+	p21.rotation.set(0,THREE.MathUtils.degToRad(63.5),0)
+
+	//poème 22
+	const p22Mat = new THREE.MeshBasicMaterial({ map: image22,transparent: true,alphaTest: -200, });
+	const p22 = new THREE.Mesh(planeGeometry, p22Mat);
+	p22.position.set(-115, 0, 20);
+	p22.rotation.set(0,THREE.MathUtils.degToRad(-63.5),0)
+
+	//poème 23
+	const p23Mat = new THREE.MeshBasicMaterial({ map: image23,transparent: true,alphaTest: -200, });
+	const p23 = new THREE.Mesh(planeGeometry, p23Mat);
+	p23.position.set(-175, 0, -10);
+	p23.rotation.set(0,THREE.MathUtils.degToRad(63.5),0)
+
+	//poème 24
+	const p24Mat = new THREE.MeshBasicMaterial({ map: image24,transparent: true,alphaTest: -200, });
+	const p24 = new THREE.Mesh(planeGeometry, p24Mat);
+	p24.position.set(-115, -3, -40);
+	p24.rotation.set(0,THREE.MathUtils.degToRad(-63.5),0)
+
+	//poème 25
+	const p25Mat = new THREE.MeshBasicMaterial({ map: image25,transparent: true,alphaTest: -200, });
+	const p25 = new THREE.Mesh(planeGeometry, p25Mat);
+	p25.position.set(-172,0, -70);
+	p25.rotation.set(0,THREE.MathUtils.degToRad(63.5),0)
+
+	//poème 26
+	const p26Mat = new THREE.MeshBasicMaterial({ map: image26,transparent: true,alphaTest: -200, });
+	const p26 = new THREE.Mesh(planeGeometry, p26Mat);
+	p26.position.set(-115, -1, -100);
+	p26.rotation.set(0,THREE.MathUtils.degToRad(-63.5),0)
+
+	//poème 27
+	const p27Mat = new THREE.MeshBasicMaterial({ map: image27,transparent: true,alphaTest: -200, });
+	const p27 = new THREE.Mesh(planeGeometry, p27Mat);
+	p27.position.set(-173, -7, -132);
+	p27.rotation.set(0,THREE.MathUtils.degToRad(63.5),0)
+
+	scene.add(p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16, p17, p18, p19, p20, p21, p22, p23, p24, p25, p26, p27);
 	////////////////////////////////////////
 
 	//// MURS ////
@@ -1974,8 +2038,6 @@ function init(){
 
 	
 }
-
-
 
 function onWindowResize() {
 	camera.aspect = window.innerWidth / window.innerHeight;
