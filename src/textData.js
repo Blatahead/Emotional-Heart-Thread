@@ -41,6 +41,13 @@ const textData = [
 		color: 0xffffff,
 		fontsize:  2.5
     },
+    {
+        message: "Chapitre 3 :  \n    Espérer",
+        position: { x: -152.5, y: -10, z: -290 },
+        rotation: { x: 0, y: 0, z:0  },
+		color: 0xffffff,
+		fontsize:  2.5
+    }
 ];
 
 export default textData;

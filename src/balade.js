@@ -12,7 +12,7 @@ let container;
 let stats;
 let controls
 let camera, scene, renderer
-let orbitControlsEnabled = true;
+let orbitControlsEnabled = false;
 
 let geometryFloorEntry
 let geometryFloorMez
@@ -963,6 +963,8 @@ function init(){
 		new THREE.Vector3(-145, -19, -290),
 		new THREE.Vector3(-145, -19, -290),
 		new THREE.Vector3(-145, -19, -290),
+		new THREE.Vector3(-145, -19, -290),
+		new THREE.Vector3(-145, -19, -290),
 
 		//poème 16
 		new THREE.Vector3(-175,-5, -70),
@@ -1016,76 +1018,85 @@ function init(){
 		new THREE.Vector3(-145, -19, -290),
 		new THREE.Vector3(-145, -19, -290),
 		new THREE.Vector3(-145, -19, -290),
+		new THREE.Vector3(-145, -19, -290),
+		new THREE.Vector3(-145, -19, -290),
+		new THREE.Vector3(-145, -19, -290),
+		new THREE.Vector3(-145, -19, -290),
+		new THREE.Vector3(-145, -19, -290),
+		new THREE.Vector3(-145, -19, -290),
+		new THREE.Vector3(-145, -19, -290),
+		new THREE.Vector3(-145, -19, -290),
+		new THREE.Vector3(-145, -19, -290),
+		new THREE.Vector3(-145, -19, -290),
 
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
-		new THREE.Vector3(-152, -87,-376),
+		//poème 19
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		new THREE.Vector3(-110, -20, -360),
+		
+
 		new THREE.Vector3(-152, -87,-376),
 		new THREE.Vector3(-152, -87,-376),
 		new THREE.Vector3(-152, -87,-376),
@@ -1603,26 +1614,27 @@ function init(){
 	//poème 19
 	const p19Mat = new THREE.MeshBasicMaterial({ map: image19,transparent: true,alphaTest: -200, });
 	const p19 = new THREE.Mesh(planeGeometry, p19Mat);
-	p19.position.set(-83, -43, 199.9);
+	p19.position.set(-145, -40, -370);
 	p19.rotation.set(0,Math.PI,0)
+
 
 	//poème 20
 	const p20Mat = new THREE.MeshBasicMaterial({ map: image20,transparent: true,alphaTest: -200, });
 	const p20 = new THREE.Mesh(planeGeometry, p20Mat);
-	p20.position.set(-120, -8, 80);
-	p20.rotation.set(0,THREE.MathUtils.degToRad(-63.5),0)
+	p20.position.set(-170, -60, -360);
+	p20.rotation.set(0,-Math.PI/2,0)
 
 	//poème 21
 	const p21Mat = new THREE.MeshBasicMaterial({ map: image21,transparent: true,alphaTest: -200, });
 	const p21 = new THREE.Mesh(planeGeometry, p21Mat);
-	p21.position.set(-175, -9, 50);
-	p21.rotation.set(0,THREE.MathUtils.degToRad(63.5),0)
+	p21.position.set(-145, -80, -350);
+	p21.rotation.set(0,Math.PI*2,0)
 
 	//poème 22
 	const p22Mat = new THREE.MeshBasicMaterial({ map: image22,transparent: true,alphaTest: -200, });
 	const p22 = new THREE.Mesh(planeGeometry, p22Mat);
-	p22.position.set(-115, 0, 20);
-	p22.rotation.set(0,THREE.MathUtils.degToRad(-63.5),0)
+	p22.position.set(-120, -90, -360);
+	p22.rotation.set(0,Math.PI/2,0)
 
 	//poème 23
 	const p23Mat = new THREE.MeshBasicMaterial({ map: image23,transparent: true,alphaTest: -200, });
