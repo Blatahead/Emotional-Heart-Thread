@@ -1,3 +1,3 @@
 [submodule "eht"]
 	path = ./three.js
-	url = https://github.com/Blatahead/Emotional-Heart-Thread.git
+	url = https://github.com/mrdoob/three.js.git
