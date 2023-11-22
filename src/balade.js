@@ -1,9 +1,9 @@
-import * as THREE from "../three.js/build/three.module.js";
-import { GUI } from '../three.js/examples/jsm/libs/lil-gui.module.min.js';
-import { OrbitControls } from '../three.js/examples/jsm/controls/OrbitControls.js';
-import Stats from '../three.js/examples/jsm/libs/stats.module.js';
-import {FontLoader} from '../three.js/examples/jsm/loaders/FontLoader.js';
-import {GLTFLoader} from '../three.js/examples/jsm/loaders/GLTFLoader.js';
+import * as THREE from "https://github.com/mrdoob/three.js/blob/dev/build/three.module.js";
+import { GUI } from 'https://github.com/mrdoob/three.js/blob/dev/examples/jsm/libs/lil-gui.module.min.js';
+import { OrbitControls } from 'https://github.com/mrdoob/three.js/blob/dev/examples/jsm/controls/OrbitControls.js';
+import Stats from 'https://github.com/mrdoob/three.js/blob/dev/examples/jsm/libs/stats.module.js';
+import {FontLoader} from 'https://github.com/mrdoob/three.js/blob/dev/examples/jsm/loaders/FontLoader.js';
+import {GLTFLoader} from 'https://github.com/mrdoob/three.js/blob/dev/examples/jsm/loaders/GLTFLoader.js';
 
 
 import textData from './textData.js';
